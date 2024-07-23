@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hamburguer Menu</title>
+    <link rel="stylesheet" href="styles/output.css" />
+  </head>
+  <body>
+    <header
+      class="w-full h-16 flex items-center justify-between px-3 bg-slate-500"
+    >
+      <div>
+        <h1 class="text-3xl font-bold">CaioDev</h1>
+      </div>
+
+      <!-- Menu mobile -->
+      <div class="md:hidden">
+        <button id="menuMobile">
+          <img
+            src="src/assets/menuHamburguerWhite.svg"
+            alt=""
+            id="menuIcone"
+            class="fechado"
+          />
+        </button>
+
+        <!-- Aviso a medida do top tem que ser igual a altura do menu -->
+        <nav
+          class="hidden absolute top-16 right-0 duration-1000 bg-purple-400"
+          id="menuBar"
+        >
+          <ul>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">contato</a></li>
+            <li><a href="#">contato</a></li>
+          </ul>
+        </nav>
+      </div>
+      <!-- fim Menu mobile -->
+
+      <!-- Menu Deskatop -->
+      <nav class="hidden md:block">
+        <ul class="flex items-center gap-3">
+          <li>
+            <a
+              href="#"
+              class="px-3 py-2 rounded-sm text-md md:text-xl font-bold"
+              >Contato</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-3 py-2 rounded-sm text-md md:text-xl font-bold"
+              >Contato</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="px-3 py-2 rounded-sm text-md md:text-xl font-bold"
+              >Contato</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <!-- Fim Menu Deskatop -->
+    </header>
+  </body>
+</html>
